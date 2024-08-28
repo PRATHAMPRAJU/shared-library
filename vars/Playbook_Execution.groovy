@@ -1,6 +1,6 @@
 def call() {
     stage('playbook execution') {
 
-        sh "ansible-playbook playbook.yml -i inventory.ini"
+        sh "ansible-playbook -i Docker/tests/inventory /Docker/tests/test.yml
     }
 }
